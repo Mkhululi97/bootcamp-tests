@@ -1,17 +1,17 @@
 describe("Test My transportFee Function", function () {
-  it("It should return 'R20' when passed 'morning'", function () {
+  it("returns the amount needed for transport, when working a morning, noon, night shift", function () {
     assert.equal("R20", transportFee("morning"));
   });
-  it("It should return 'R10' when passed 'noon'", function () {
+  it("returns the amount needed for transport, when working a morning, noon, night shift", function () {
     assert.equal("R10", transportFee("noon"));
   });
-  it("It should return 'R20' when passed 'morning, noon, night'", function () {
+  it("returns the amount needed for transport, when working a morning, noon, night shift", function () {
     assert.equal("R20", transportFee("morning, noon, night"));
   });
-  it("It should return 'Invalid shift' when passed ' '", function () {
+  it("returns 'Invalid shift' if string passed is not morning, noon, night", function () {
     assert.equal("Invalid shift", transportFee(""));
   });
-  it("It should return 'free' when passed 'night'", function () {
+  it("returns free if string passed is night", function () {
     assert.equal("free", transportFee("night"));
   });
 });

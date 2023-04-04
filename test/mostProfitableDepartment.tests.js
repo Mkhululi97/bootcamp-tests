@@ -23,16 +23,16 @@ const salesData4 = [
   { department: "carpentry", sales: 6109, day: "Thursday" },
 ];
 describe("Test My mostProfitableDepartment Function", function () {
-  it("It should return carpentry when is passed salesData", function () {
+  it("Should return most profitable department when passed a sales data", function () {
     assert.equal("carpentry", mostProfitableDepartment(salesData));
   });
-  it("It should return hardware when is passed salesData2", function () {
+  it("Should return most profitable department when passed a sales data", function () {
     assert.equal("hardware", mostProfitableDepartment(salesData2));
   });
-  it("It should return outdoor when is passed salesData3", function () {
+  it("Should return most profitable department when passed a sales data", function () {
     assert.equal("outdoor", mostProfitableDepartment(salesData3));
   });
-  it("It should return outdoor when is passed salesData4", function () {
+  it("Should return most profitable department when passed a sales data", function () {
     assert.equal("outdoor", mostProfitableDepartment(salesData4));
   });
 });

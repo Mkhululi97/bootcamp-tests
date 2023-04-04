@@ -1,17 +1,17 @@
 describe("Test My isFromBellville Function", function () {
-  it("It should return true when is passed 'CY'", function () {
+  it("It should return true when passed string number plate that starts with 'CY'", function () {
     assert.equal(true, isFromBellville("CY"));
   });
-  it("It should return true when is passed 'CY 123'", function () {
+  it("It should return true when passed string number plate that starts with 'CY' ", function () {
     assert.equal(true, isFromBellville("CY 123"));
   });
-  it("It should return false when is passed 'CJ'", function () {
+  it("It should return false when passed string number plate that does not start with 'CY'", function () {
     assert.equal(false, isFromBellville("CJ"));
   });
-  it("It should return false when is passed '203 CJ'", function () {
+  it("It should return false when passed string number plate that  does not start with 'CY'", function () {
     assert.equal(false, isFromBellville("203 CJ"));
   });
-  it("It should return false when is passed 'CA 245'", function () {
+  it("It should return false when passed string number plate that does not start with 'CY'", function () {
     assert.equal(false, isFromBellville("CA 245"));
   });
 });

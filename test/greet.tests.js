@@ -1,11 +1,11 @@
 describe("Test My Greet Function", function () {
-  it("it should return 'Hello, Mkhululi, when called with Mkhululi'", function () {
+  it("returns a greeting message, with the persons name", function () {
     assert.equal(`Hello, Mkhululi`, greet("Mkhululi"));
   });
-  it("it should return 'Hello, Palesa, when called with Palesa'", function () {
+  it("returns a greeting message, with the persons name", function () {
     assert.equal(`Hello, Palesa`, greet("Palesa"));
   });
-  it("it should return 'Hello, Akhona, when called with Akhona'", function () {
+  it("returns a greeting message, with the persons name", function () {
     assert.equal(`Hello, Akhona`, greet("Akhona"));
   });
 });
