@@ -11,7 +11,7 @@ describe("Test My transportFee Function", function () {
   it("It should return 'Invalid shift' when passed ' '", function () {
     assert.equal("Invalid shift", transportFee(""));
   });
-  it("It should return 'Free' when passed 'night'", function () {
+  it("It should return 'free' when passed 'night'", function () {
     assert.equal("free", transportFee("night"));
   });
 });
